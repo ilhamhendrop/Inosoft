@@ -14,3 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'IndexController@index');
+Route::get('/index/motor', 'KendaraanController@motor')->name('motor');
+Route::get('/index/motor/input', 'KendaraanController@inputmotor')->name('input_motor');
+Route::get('/index/mobil', 'KendaraanController@mobil')->name('mobil');
+Route::get('/index/mobil/input', 'KendaraanController@inputmobil')->name('input_mobil');
